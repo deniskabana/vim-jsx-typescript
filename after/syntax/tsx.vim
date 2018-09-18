@@ -143,27 +143,16 @@ highlight def link tsxComment Error
 highlight def link tsxAttrib htmlArg
 highlight def link tsxEscapeJs tsxEscapeJs
 
-"highlight def link tsxCloseString htmlTagName
+highlight def link tsxCloseString rubyClass
 highlight def link tsxAttributeBraces htmlTag
 highlight def link tsxAttributeComment Comment
-
-
-
-" JSX Dark Blue and Neon Green highlights
-"hi xmlEndTag guifg=#2974a1
-"hi tsxCloseString guifg=#2974a1
-"hi htmlTag guifg=#2974a1
-"hi htmlEndTag guifg=#2974a1
-"hi htmlTagName guifg=#59ACE5
-"hi tsxAttrib guifg=#1BD1C1
-
 
 " Custom React Highlights
 syn keyword ReactState state nextState prevState setState
 " Then EITHER (define your own colour scheme):
 "hi ReactState guifg=#C176A7
 " OR (make the colour scheme match an existing one):
- hi link ReactKeywords typescriptRComponent
+hi link ReactKeywords typescriptRComponent
 
 syn keyword ReactProps props defaultProps ownProps nextProps prevProps
 "hi ReactProps guifg=#D19A66
