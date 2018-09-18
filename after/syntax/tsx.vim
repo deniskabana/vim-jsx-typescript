@@ -131,10 +131,10 @@ syntax match tsxElseOperator +:+
 
 syntax cluster jsExpression add=tsxRegion
 
-" highlight def link tsxTagName htmlTagName
-highlight def link tsxTagName xmlTagName
-" highlight def link tsxCloseTag htmlTag
-highlight def link tsxCloseTag xmlEndTag
+ highlight def link tsxTagName htmlTagName
+"highlight def link tsxTagName xmlTagName
+ highlight def link tsxCloseTag htmlTag
+"highlight def link tsxCloseTag xmlEndTag
 
 highlight def link tsxEqual htmlTag
 highlight def link tsxString String
@@ -143,45 +143,45 @@ highlight def link tsxComment Error
 highlight def link tsxAttrib htmlArg
 highlight def link tsxEscapeJs tsxEscapeJs
 
-highlight def link tsxCloseString htmlTagName
+"highlight def link tsxCloseString htmlTagName
 highlight def link tsxAttributeBraces htmlTag
 highlight def link tsxAttributeComment Comment
 
 
 
 " JSX Dark Blue and Neon Green highlights
-hi xmlEndTag guifg=#2974a1
-hi tsxCloseString guifg=#2974a1
-hi htmlTag guifg=#2974a1
-hi htmlEndTag guifg=#2974a1
-hi htmlTagName guifg=#59ACE5
-hi tsxAttrib guifg=#1BD1C1
+"hi xmlEndTag guifg=#2974a1
+"hi tsxCloseString guifg=#2974a1
+"hi htmlTag guifg=#2974a1
+"hi htmlEndTag guifg=#2974a1
+"hi htmlTagName guifg=#59ACE5
+"hi tsxAttrib guifg=#1BD1C1
 
 
 " Custom React Highlights
 syn keyword ReactState state nextState prevState setState
 " Then EITHER (define your own colour scheme):
-hi ReactState guifg=#C176A7
+"hi ReactState guifg=#C176A7
 " OR (make the colour scheme match an existing one):
-" hi link ReactKeywords typescriptRComponent
+ hi link ReactKeywords typescriptRComponent
 
 syn keyword ReactProps props defaultProps ownProps nextProps prevProps
-hi ReactProps guifg=#D19A66
+"hi ReactProps guifg=#D19A66
 
 syn keyword Events e event target value
-hi Events ctermfg=204 guifg=#56B6C2
+"hi Events ctermfg=204 guifg=#56B6C2
 
 syn keyword ReduxKeywords dispatch payload
-hi ReduxKeywords ctermfg=204 guifg=#C678DD
+"hi ReduxKeywords ctermfg=204 guifg=#C678DD
 
 syn keyword Ethereum ether eth web3 Web3 owner msg sender tx
-hi Ethereum ctermfg=204 guifg=#E48565
+"hi Ethereum ctermfg=204 guifg=#E48565
 
 syn keyword WebBrowser window localStorage
-hi WebBrowser ctermfg=204 guifg=#56B6C2
+"hi WebBrowser ctermfg=204 guifg=#56B6C2
 
 syn keyword ReactLifeCycleMethods componentWillMount shouldComponentUpdate componentWillUpdate componentDidUpdate componentWillReceiveProps componentWillUnmount componentDidMount
-hi ReactLifeCycleMethods ctermfg=204 guifg=#D19A66
+"hi ReactLifeCycleMethods ctermfg=204 guifg=#D19A66
 
 
 let b:current_syntax = 'javascript.tsx'
